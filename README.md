@@ -72,7 +72,9 @@ We computed the following similarity metrics between original and synthesized au
 | **KL Divergence** | Divergence between mel-spectrogram distributions |
 | **DTW Score** | Dynamic Time Warping alignment cost |
 
-Sample Results can be seen in similarity_metrics.csv file.
+---
+Sample Results can be seen in [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
+
 ---
 
 ## Loss Plots
