@@ -77,11 +77,8 @@ Sample Results can be seen in similarity_metrics.csv file.
 
 ## Loss Plots
 
-Visual summaries of the metrics across samples:
-
-![L1 Loss]
-![KL Divergence]
-![DTW Score]
+Visual summaries of the metrics across samples can be found in my colab notebook outputs: 
+[Google_Colab](https://colab.research.google.com/drive/1SC8Lb0LqdQuaW6v4fODICUauU8oEAU7K#scrollTo=X8-5MeiqT9K_)
 
 ---
 
