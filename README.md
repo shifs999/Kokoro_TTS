@@ -126,3 +126,7 @@ The Kokoro TTS model performs well on slow and thoughtful speech, preserving cla
 
 For questions or collaborations, feel free to reach out at **[saizen777999@gmail.com]**
 
+### Acknowledgements
+
+This work would not have been possible without [hexgrad_kokoro_repo](https://github.com/hexgrad/kokoro), which is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). 
+
