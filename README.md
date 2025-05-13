@@ -49,9 +49,11 @@ Metadata [DesiVocal_Dataset](https://www.google.com/url?q=https://www.google.com
   - `wav_file`: Filename of the original audio
   - `transcript`: Ground truth text corresponding to the audio
 
-**Colab Notebook**: My original work for the given dataset based on the kokoro model is given in kokoro_tts_1.ipynb file in this repo.
+**Colab Notebook**: My original work, based on the kokoro model for the given dataset, is present in both [kokoro_tts_1.ipynb](./kokoro_tts_1.ipynb) and [kokoro_tts_1.py](./kokoro_tts_1.py) formats in this repo.
+
 OR
-Open my colab notebook from here [Open in Google Colab](https://colab.research.google.com/drive/1SC8Lb0LqdQuaW6v4fODICUauU8oEAU7K#scrollTo=X8-5MeiqT9K_)
+
+Directly open my colab notebook from here [Open in Google Colab](https://colab.research.google.com/drive/1SC8Lb0LqdQuaW6v4fODICUauU8oEAU7K#scrollTo=X8-5MeiqT9K_)
 
 
 **Example**:
@@ -74,7 +76,7 @@ We computed the following similarity metrics between original and synthesized au
 
 ---
 ## Sample Results 
-Sample results can be seen in: [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
+Sample results can be seen in :  [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
 
 ---
 
