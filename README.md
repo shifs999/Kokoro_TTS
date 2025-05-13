@@ -1,4 +1,4 @@
-# Kokoro_TTS
+# :) Kokoro_TTS
 
 An inference library for [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M). 
 
@@ -73,7 +73,8 @@ We computed the following similarity metrics between original and synthesized au
 | **DTW Score** | Dynamic Time Warping alignment cost |
 
 ---
-Sample Results can be seen in [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
+## Sample Results 
+Sample results can be seen in: [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
 
 ---
 
@@ -81,6 +82,12 @@ Sample Results can be seen in [similarity_metrics.csv file](https://github.com/s
 
 Visual summaries of the metrics across samples can be found in my colab notebook outputs: 
 [Google_Colab](https://colab.research.google.com/drive/1SC8Lb0LqdQuaW6v4fODICUauU8oEAU7K#scrollTo=X8-5MeiqT9K_)
+
+Metric Visuals
+
+<img src="./tts_loss_curve.png" alt="Loss curve" width="500"/>
+
+<img src="./tts_metrics.png" alt="Metric plot" width="500"/>
 
 ---
 
@@ -124,6 +131,8 @@ The Kokoro TTS model performs well on slow and thoughtful speech, preserving cla
 ## Contact
 
 For questions or collaborations, feel free to reach out at **[saizen777999@gmail.com]**
+
+---
 
 ### Acknowledgements
 
