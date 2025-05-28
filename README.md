@@ -43,29 +43,37 @@ pipeline = KPipeline(lang_code='a') # <= make sure lang_code matches voice, refe
 
 ## Dataset
 
-- **Source**: Provided as `.wav` files and a metadat.csv file provided in this repo.
-Metadata [DesiVocal_Dataset](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://drive.google.com/file/d/1DibcZbSVOrFzkTEVzvXWaxKQddu6Vq2K/view?usp%253Dshare_link%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1747072039782353%26amp;usg%3DAOvVaw1ReM5FJTzjDbdsX4oa8Zy3&sa=D&source=docs&ust=1747072039789531&usg=AOvVaw3Fxl61wHeAkijXt1BbLlhX)
-- **Metadata**:
-  - `wav_file`: Filename of the original audio
-  - `transcript`: Ground truth text corresponding to the audio
+- **Source**: The dataset contains a metadata file and an audio file corresponding to each `.wav` file in the metadata file, links to both of which I have provided below.
 
-**Colab Notebook**: My original work, based on the kokoro model for the given dataset, is present in both [kokoro_tts_1.ipynb](./kokoro_tts_1.ipynb) and [kokoro_tts_1.py](./kokoro_tts_1.py) formats in this repo.
+   - Audio files [.zip](https://drive.google.com/file/d/1wCBkxpYN-tAwnwkSv5DhEj1nNamsN7Gy/view?usp=sharing)
+
+   - Metadata [DesiVocal_Dataset](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://drive.google.com/file/d/1DibcZbSVOrFzkTEVzvXWaxKQddu6Vq2K/view?usp%253Dshare_link%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1747072039782353%26amp;usg%3DAOvVaw1ReM5FJTzjDbdsX4oa8Zy3&sa=D&source=docs&ust=1747072039789531&usg=AOvVaw3Fxl61wHeAkijXt1BbLlhX)
+ 
+**Example**:
+| wav_file | transcript |
+|----------|------------|
+| `13b2068a-2def-4f69-b4ba-168c4da30498.wav` | "I invite you to embark on a profound journey..." |
+    
+**Metadata**:
+
+  -> wav_file : Filename of the original audio
+  
+  -> transcript : Ground truth text corresponding to the audio
+
+
+**Colab Notebook**: My original work, using the kokoro model on the given dataset to generate audio (inference), is present in both [kokoro_tts_1.ipynb](./kokoro_tts_1.ipynb) and [kokoro_tts_1.py](./kokoro_tts_1.py) formats in this repo.
 
 OR
 
 Directly open my colab notebook from here [Open in Google Colab](https://colab.research.google.com/drive/1SC8Lb0LqdQuaW6v4fODICUauU8oEAU7K#scrollTo=X8-5MeiqT9K_)
 
-
-**Example**:
-| wav_file | transcript |
-|----------|------------|
-| `13b2068a-2def-4f69-b4ba-168c4da30498.wav` | "I invite you to embark on a profound journey..." |
+Each example includes: Ground Truth Audio and Predicted Audio [kokoro_outputs](https://github.com/shifs999/Kokoro_TTS/tree/main/kokoro_outputs)
 
 ---
 
 ## Evaluation Metrics
 
-We computed the following similarity metrics between original and synthesized audio:
+The following similarity metrics have been computed between original and synthesized audio:
 
 | Metric | Description |
 |--------|-------------|
@@ -74,8 +82,7 @@ We computed the following similarity metrics between original and synthesized au
 | **KL Divergence** | Divergence between mel-spectrogram distributions |
 | **DTW Score** | Dynamic Time Warping alignment cost |
 
----
-## Sample Results 
+**Sample Results**
 Sample results can be seen in :  [similarity_metrics.csv file](https://github.com/shifs999/Kokoro_TTS/blob/main/similarity_metrics.csv).
 
 ---
@@ -93,14 +100,6 @@ Metric Visuals
 
 ---
 
-## Examples
-
-Each example includes:
-- **Phoneme Input** *(Might be missing in dataset)*
-- **Ground Truth Audio**
-- **Predicted Audio (Kokoro TTS Output)**
----
-
 ## Commentary
 
 - The **DTW scores** indicate high alignment for most samples, which means there is strong temporal similarity between original and generated speech.
@@ -111,14 +110,14 @@ Each example includes:
 
 ## Inference Notes
 
-- Output sample rate: **24000 Hz** (resampled from 24000 Hz to match ground truth)
+- Output sample rate: **24000 Hz** 
 - Inference was run in **Google Colab** using the `kokoro` model.
 
 ---
 
 ## Conclusion
 
-The Kokoro TTS model performs well on slow and thoughtful speech, preserving clarity and rhythm. The loss metrics and plots confirm close alignment with original audios, with smooth waveform transitions and consistent phoneme mapping.
+The Kokoro TTS model performs well on slow and thoughtful speech, preserving clarity and rhythm. The loss metrics and plots confirm close alignment with original audios, with smooth waveform transitions.
 
 ---
 
@@ -132,7 +131,7 @@ The Kokoro TTS model performs well on slow and thoughtful speech, preserving cla
 
 ## Contact
 
-For questions or collaborations, feel free to reach out at **[saizen777999@gmail.com]**
+For questions or collaborations, feel free to reach out at **saizen777999@gmail.com**
 
 ---
 
